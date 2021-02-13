@@ -1,0 +1,456 @@
+/* Matej Dubec - xdubec00 */
+
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  height: 100%;
+}
+
+#main {
+  background: url("img/bg.jpg") no-repeat top center / 100% 95%;
+  background-attachment: scroll;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 15px 15px;
+  max-width: 1140px;
+}
+
+/* HORNE MENU */
+
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.navbar-nav li {
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 13px;
+  letter-spacing: 200%;
+  overflow: auto;
+}
+
+ul.navbar-nav li a {
+  color: #ffffff;
+  display: inline-table;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+}
+
+a:hover {
+  color: #005dd0;
+}
+
+h1, h2, h3 {
+  font-weight: lighter;
+}
+
+.menuitem {
+  color: #212529;
+}
+
+/* SEKCIA THE BIG RESTAURANT */
+
+#section-home .content{
+  padding: 0;
+  height: 82.5vh; /* Odcitany padding a velkost navbaru, tzn dokopy 95% */
+  min-height: 500px;
+}
+
+#section-home h1 {
+  margin-bottom: 0;
+  padding-top: 20%;
+}
+
+#section-home a {
+  border: 1px solid rgba(230, 230, 230, 0.4); 
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+  letter-spacing: 0.2em;
+  font-size: 13px;
+}
+
+#section-home .btn:hover {
+  color: #868e96;
+  background-color: #ffffff;
+}
+
+#section-home .content p{
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2em;
+  margin-bottom: 2em;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#section-home .content .sub-heading{
+  width: 48%;
+}
+
+/* SEKCIA THE RESTAURANT */
+
+#section-about { 
+  background-color: #ffffff;
+  overflow: auto;
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
+  padding-left: 4.5%;
+}
+
+#section-about a {
+  color: #ee0427;
+}
+
+#section-about a:hover {
+  color: #005dd0;
+}
+
+#section-about p, #section-about h2 {
+  width: 33.33%;
+  float: left;
+  display: inline-flex;
+  font-size: 16px;
+}
+
+#section-about .descript {
+  margin-left: 18%;
+  min-width: 350px;
+}
+
+#section-about .descript p {
+  margin-top: 0;
+  color: #868e96;
+  line-height: 175%;
+}
+
+#section-about img {
+  width: 85%;
+  margin-right: 7.5%;
+  align-items: center;
+}
+
+#section-about .descript h2 {
+  width: min-content;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  font-size: 32px;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+
+#section-menu::before {
+  content: "";
+  display: inline-table;
+  clear: both;
+}
+
+/* SEKCIA MENU */
+
+#section-menu {
+  padding-top: 5%;
+  padding-bottom: 7.5%;
+  background-color: #ffffff;
+  min-width: 500px;
+}
+
+#section-menu h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+#section-menu h3 {
+  font-weight: 300;
+}
+
+#section-menu .menuitem p {
+  color: #868e96;
+}
+
+#section-menu .tabs {
+  list-style-type: none;
+  text-align: center;
+}
+
+#section-menu .tabs li {
+  padding: 0.5em;
+  display: inline-block;
+}
+
+#section-menu .tabs .btn {
+  border: 1px solid rgba(134, 142, 150, 0.25);
+  text-transform: uppercase;
+  padding: 1.5em 1.3em;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  text-align: center;
+}
+
+#section-menu .tabs .active.btn {
+  border:1px solid black; 
+}
+
+#section-menu .menucols {
+  display: table;  
+  margin: 0 auto;
+}
+
+#section-menu .menucols ul {
+  float: left;
+  position: relative;
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+#section-menu .price {
+  float: right;
+  padding-top: 1.2em;
+  color: #212529;
+  font-weight: 300;
+}
+
+#section-menu .menuitem {
+  float: left;
+  width: 460px; /* Odcitana sirka stlpca s cenou (40px), v principe 500px */
+}
+
+#section-menu .content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* SEKCIE S TMAVYM POZADIM */
+
+section.dark .content{
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+
+section.dark h1, section.dark h2 {
+  font-size: 62px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+section.dark .content {
+  vertical-align: middle;
+  align-content: center;
+}
+
+section.dark .content p{
+  width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2em; 
+  font-weight: 275;
+}
+
+/* SEKCIA GALLERY  */
+
+#section-gallery {
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
+  background-color: #ffffff;
+  width: 100%; 
+}
+
+#section-gallery p {
+  display: inline;
+}
+
+#section-gallery .photos {
+  display: flex;
+}
+
+#section-gallery .photos img{
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+#section-gallery h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+}
+
+#section-gallery .photos::after {
+  clear: both;
+}
+
+/* SEKCIA WHAT PEOPLE SAY */
+
+#section-testimonials {
+  background-color: #e4f8f4;
+  text-align: center;
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
+}
+
+#section-testimonials h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+}
+
+  #section-testimonials .content{
+  display: inline-block; 
+}
+
+#section-testimonials .testimonial{
+  float: left;
+  width: 33.33%;
+  color: #212529;
+}
+
+#section-testimonials .testimonial blockquote::before{
+  font-size: 62px;
+  content: " “ ";
+  display: block;
+}
+
+#section-testimonials .testimonial blockquote {
+  font-family: Crimson Text;
+  font-size: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#section-testimonials .rounded-circle {
+  border-radius:50%;
+  width: 25%;
+}
+
+#section-testimonials .name {
+  font-weight: 300;
+}
+
+#section-testimonials .nick {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 300;
+}
+
+#section-testimonials .content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* SEKCIA EVENTS */
+
+#section-events {
+  background-color: rgb(230, 230, 230);
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
+}
+
+#section-events .card-deck {
+  display: inline-flex;
+}
+
+#section-events .card {
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: #ffffff;
+}
+
+#section-events .card-img-top {
+  width: 100%;
+  padding-bottom: 7.5%;
+}
+
+#section-events h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+}
+
+#section-events .card-body {
+  text-align: left;
+  padding-left: 7.5%;
+}
+
+#section-events .card-body h4 {
+  margin: 0;
+  vertical-align: top;
+  width: 180px;
+}
+
+#section-events .card-body h4 a{
+  color: #ee0427;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#section-events .card-body h4 a:hover {
+  color: #005dd0;
+}
+
+#section-events .card-body small {
+  color: #868e96;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+#section-events .card-body p{
+  width: 73%;
+  color: #868e96;
+  line-height: 175%;
+  font-weight: 300;
+}
+
+/* FOOTER */
+
+#footer {
+  background-color: rgb(230, 230, 230);
+  color: #868e96;
+  padding-bottom: 4%;
+  padding-top: 2%;
+}
+
+#footer a {
+  color: black;
+  font-weight: 300;
+}
+
+#footer .content {
+  text-align: center
+}
+
+#footer a:hover {
+  color: #005dd0;
+}
